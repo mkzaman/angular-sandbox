@@ -1,0 +1,12 @@
+<h1>Dynamic TODO List</h1>
+<ul>
+    <li *ngFor="let item of itemList">{{ item }}</li>
+</ul>
+
+<input type="text" [(ngModel)]="inputText">
+
+<span>{{inputText}}</span>
+
+<button (click)="addListItem()">Click Me</button>
+
+
